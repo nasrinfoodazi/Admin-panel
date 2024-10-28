@@ -1,0 +1,8 @@
+.logo {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.logo>img {
+    display: block;
+}

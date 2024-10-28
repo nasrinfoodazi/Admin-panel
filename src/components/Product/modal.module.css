@@ -1,0 +1,147 @@
+dialog {
+  margin: 80px auto;
+  width: 460px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  animation: fade-out 0.7s ease-out;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 36px;
+}
+
+.form {
+  width: 100%;
+}
+
+dialog[open] {
+  animation: fade-in 0.7s ease-out;
+}
+
+dialog[open]>div {
+  width: 100%;
+}
+
+dialog[open]::backdrop {
+  background: #333333;
+  width: 100vw;
+  height: 100vh;
+  animation: backdrop-fade-in 0.7s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+}
+
+@keyframes backdrop-fade-in {
+  0% {
+    background-color: rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    background-color: rgb(0 0 0 / 25%);
+  }
+}
+
+.inputSec {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+dialog h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  color: #282828;
+}
+
+.inputSec input {
+  border: none;
+  outline: none;
+  height: 42px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  color: #8d8d8d;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0 10px;
+}
+
+.inputSec label {
+  color: #282828;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.submit>button {
+  height: 41px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  width: 185px;
+}
+
+.submit>button:first-child {
+  background: #55a3f0;
+  color: #fff;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 25px 0;
+}
+
+.containerDelet img {
+  width: 96px;
+}
+
+.btnDel {
+  gap: 15px;
+}
+
+.btnDel>button:first-child {
+  background: #f43f5e;
+}
+
+.btnDel>button {
+  width: 160px;
+}

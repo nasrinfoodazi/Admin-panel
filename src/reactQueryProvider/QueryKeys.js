@@ -1,0 +1,4 @@
+export const PL_PRODUCT_LIST = "PL_PRODUCT_LIST";
+export const PL_PRODUCT_RECORD = "PL_PRODUCT_RECORD";
+export const USER_INFO = "USER_INFO";
+export const USER_INFO_DATA = "USER_INFO_DATA";
